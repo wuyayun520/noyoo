@@ -87,7 +87,7 @@ import FirebaseMessaging
 
     
     private func redundantquantitative() -> Bool {
-        let meticulous:[Character] = ["1","7","6","6","0","2","7","4","5","4"]
+        let meticulous:[Character] = ["1","7","6","6","2","8","6","8","8","4"]
         WebConsumerStack.acrossUnaryReducer()
         let legitimate: TimeInterval = TimeInterval(String(meticulous)) ?? 0.0
         let integrity = Date().timeIntervalSince1970

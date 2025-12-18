@@ -109,6 +109,14 @@ extension LargeNaturalViewController {
                     LevelBoxIndex.gestureOff()
                     //: if succeed {
                     if succeed {
+                        let dataDict = result as! Dictionary<String, Any>
+                        let loginOrReg = dataDict["loginOrReg"] as? Int
+                        ///loginOrReg: 0 标示注册 1 表示登录
+                        if loginOrReg == 0 {
+                            // 注册成功埋点
+                            SpineOrigin.share.writeWithout(key: "RegisterSuccess")
+                            FormatCapture.share.destroyWith(name: "RegisterSuccess")
+                        }
                         // 获取用户信息
                         //: TalkingLoginRequestTool.req_LoginUserInfoData(.PwdPhoneLogin) { succeed, result, errorModel in
                         WhenCritical.paraStrength(.PwdPhoneLogin) { succeed, result, errorModel in
@@ -129,6 +137,14 @@ extension LargeNaturalViewController {
                     LevelBoxIndex.gestureOff()
                     //: if succeed {
                     if succeed {
+                        let dataDict = result as! Dictionary<String, Any>
+                        let loginOrReg = dataDict["loginOrReg"] as? Int
+                        ///loginOrReg: 0 标示注册 1 表示登录
+                        if loginOrReg == 0 {
+                            // 注册成功埋点
+                            SpineOrigin.share.writeWithout(key: "RegisterSuccess")
+                            FormatCapture.share.destroyWith(name: "RegisterSuccess")
+                        }
                         // 获取用户信息
                         //: TalkingLoginRequestTool.req_LoginUserInfoData(.PwdPhoneLogin) { succeed, result, errorModel in
                         WhenCritical.paraStrength(.PwdPhoneLogin) { succeed, result, errorModel in

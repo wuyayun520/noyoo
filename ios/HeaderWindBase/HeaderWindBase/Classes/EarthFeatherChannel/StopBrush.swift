@@ -1,9 +1,9 @@
 
 //: Declare String Begin
 
-/*: "ricnoy" :*/
-fileprivate let kWithinValue:String = "rinatureno"
-fileprivate let showBurnGameValue:[Character] = ["y"]
+/*: "mciyon" :*/
+fileprivate let kWithinValue:String = "mcnatureyo"
+fileprivate let showBurnGameValue:[Character] = ["n"]
 
 /*: "2.0.0" :*/
 fileprivate let show_productionPutMsg:[Character] = ["2",".","0",".","0"]
@@ -89,8 +89,8 @@ public let user_locateTitle = true
 //: public let Encryption_Request = true
 public let mainCharacteristicPath = true
 /// 域名
-//: public let ReplaceUrlDomain = "ricnoy"
-public let dataServiceName = (kWithinValue.replacingOccurrences(of: "nature", with: "c") + String(showBurnGameValue))
+//: public let ReplaceUrlDomain = "mciyon"
+public let dataServiceName = (kWithinValue.replacingOccurrences(of: "nature", with: "i") + String(showBurnGameValue))
 /// 网络版本号
 //: public let AppNetVersion = "2.0.0"
 public let kJoinKey = (String(show_productionPutMsg))
